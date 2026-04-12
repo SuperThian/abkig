@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Workshop Pastry Kami Raih Sertifikat Internasional",
+    "excerpt": "Peserta workshop pastry kami berhasil meraih sertifikat dari International Pastry Association. Pencapaian luar biasa dari dedikasi dan kerja keras tim instruktur kami.",
+    "category": "Prestasi",
+    "date": "2024-04-10",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80",
+    "content": "Dengan bangga mengumumkan bahwa peserta workshop pastry kami telah berhasil meraih sertifikat internasional dari International Pastry Association. Ini merupakan bukti nyata dari kualitas pendidikan yang kami berikan dan dedikasi luar biasa dari semua instruktur kami dalam membimbing setiap peserta mencapai standar internasional."
+  },
+  {
+    "id": 2,
+    "title": "Grand Opening Akademi Bisnis Kuliner Indonesia Global",
+    "excerpt": "Acara pembukaan resmi ABKIG telah berhasil dilaksanakan dengan hadiran berbagai stakeholder dan media massa terkemuka. Terima kasih atas dukungan luar biasa dari semua pihak.",
+    "category": "Acara",
+    "date": "2024-04-05",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561027?w=500&q=80",
+    "content": "Acara Grand Opening Akademi Bisnis Kuliner Indonesia Global telah dilaksanakan dengan meriah pada Sabtu, 5 April 2024. Event ini dihadiri oleh berbagai stakeholder industri kuliner, media massa, dan tentu saja mitra-mitra bisnis kami yang berharga. Terima kasih kepada semua pihak yang telah mendukung kesuksesan acara ini."
+  },
+  {
+    "id": 3,
+    "title": "Program Beasiswa untuk Talenta Muda 2024",
+    "excerpt": "ABKIG membuka program beasiswa penuh untuk talenta muda yang berbakat. Kesempatan emas untuk mengembangkan skill kuliner Anda bersama praktisi berpengalaman.",
+    "category": "Program",
+    "date": "2024-03-28",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
+    "content": "Kami dengan senang hati mengumumkan pembukaan program beasiswa penuh untuk tahun 2024. Program ini dirancang khusus untuk memberikan kesempatan kepada talenta muda yang bersemangat untuk mengembangkan skill kuliner mereka tanpa beban finansial yang berat."
+  }
+]

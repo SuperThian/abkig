@@ -1,0 +1,49 @@
+# PHP
+*.php.bak
+*.php~
+
+# Database
+*.sql.bak
+config/database.php
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+vendor/
+node_modules/
+
+# Cache
+.cache/
+cache/
+
+# Session
+session/
+tmp/
+
+# Upload
+uploads/
+media/
+
+# Temporary
+temp/
+tmp/
