@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformasi Digital: Masa Depan Pendidikan Vokasi — Institusi Pendidikan Global</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #1a3a6c;
+            --accent: #c0392b;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --muted-gray: #6c757d;
+            --text-dark: #2c3e50;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background-color: var(--white);
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--navy);
+            text-decoration: none;
+        }
+
+        /* ─── HERO SECTION ─── */
+        .article-hero {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 80px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .category-label {
+            display: inline-block;
+            background-color: var(--accent);
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .article-hero h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* ─── BODY LAYOUT ─── */
+        .article-body-wrapper {
+            padding: 80px 0;
+        }
+
+        .body-grid {
+            display: grid;
+            grid-template-columns: 65% 35%;
+            gap: 60px;
+        }
+
+        /* ─── MAIN CONTENT ─── */
+        .main-content .lead {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 30px;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .inline-image {
+            margin: 40px 0;
+        }
+
+        .inline-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .caption {
+            font-size: 0.85rem;
+            color: var(--muted-gray);
+            margin-top: 10px;
+            display: block;
+            font-style: italic;
+        }
+
+        /* ─── SIDEBAR ─── */
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            align-self: start;
+        }
+
+        .sidebar-section {
+            margin-bottom: 50px;
+        }
+
+        .sidebar-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .share-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .share-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background-color: var(--light-gray);
+            text-decoration: none;
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .share-btn:hover {
+            background-color: var(--navy);
+            color: var(--white);
+        }
+
+        /* News Widget */
+        .news-item {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .news-thumb {
+            width: 80px;
+            height: 60px;
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .news-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-item h4 {
+            font-size: 0.95rem;
+            line-height: 1.3;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .news-item .read-more {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background-color: #f1f3f5;
+            padding: 80px 0 30px;
+            color: var(--text-dark);
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            color: var(--navy);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            text-decoration: none;
+            color: var(--muted-gray);
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            background-color: var(--navy);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            font-size: 0.85rem;
+            color: var(--muted-gray);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .hero-grid { gap: 30px; }
+            .article-hero h1 { font-size: 2.5rem; }
+            .body-grid { gap: 40px; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            .category-label { margin: 0 auto 20px; }
+            .body-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .article-hero h1 { font-size: 2rem; }
+            .main-content .lead { font-size: 1.15rem; }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Dummy -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">VOKASI.GLOBAL</a>
+        </div>
+    </header>
+
+    <!-- ARTICLE HERO -->
+    <section class="article-hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="category-label">Executive Brief</span>
+                <h1>Transformasi Digital: Membangun Ekosistem Pendidikan Vokasi Masa Depan</h1>
+                <div class="article-meta">
+                    Oleh <strong>Dr. Hardjono Santoso</strong> &bull; 14 April 2026
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop" alt="Pendidikan Digital">
+            </div>
+        </div>
+    </section>
+
+    <!-- BODY CONTENT -->
+    <div class="container article-body-wrapper">
+        <div class="body-grid">
+            
+            <!-- MAIN COLUMN -->
+            <main class="main-content">
+                <p class="lead">Pendidikan vokasi saat ini tengah menghadapi persimpangan krusial di mana integrasi teknologi bukan lagi sekadar pilihan, melainkan syarat utama untuk menghasilkan lulusan yang relevan dengan kebutuhan industri 4.0.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut sem vitae metus fringilla commodo. Proin id dui id metus tincidunt maximus non eu sem. Nam elementum varius nisi, sed efficitur sapien elementum sit amet.</p>
+
+                <!-- Inline Image 1 -->
+                <figure class="inline-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" alt="Diskusi Mahasiswa">
+                    <figcaption class="caption">Mahasiswa vokasi tengah melakukan kolaborasi dalam proyek pengembangan aplikasi bisnis digital di laboratorium kampus.</figcaption>
+                </figure>
+
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. In hac habitasse platea dictumst. Morbi non eros nec libero dapibus congue. Nullam at sapien ac urna semper finibus. Suspendisse potenti. Integer placerat convallis ipsum, vitae interdum ipsum pulvinar vitae.</p>
+
+                <p>Curabitur vel nisl nec dui imperdiet bibendum. Donec sed ligula gravida, sodales eros nec, finibus magna. Maecenas scelerisque lacus ac sapien feugiat, non hendrerit lorem congue. Sed sit amet lacus porta, malesuada mi eu, pulvinar purus. Nullam condimentum interdum dui, ac semper lorem vestibulum vel.</p>
+
+                <!-- Inline Image 2 -->
+                <figure class="inline-image">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" alt="Standard Industri">
+                    <figcaption class="caption">Fasilitas laboratorium berstandar industri 4.0 yang mendukung pengembangan keterampilan teknis mahasiswa secara intensif.</figcaption>
+                </figure>
+
+                <p>Phasellus eget elementum lacus, id feugiat lorem. Fusce efficitur arcu quis urna aliquam, a facilisis odio egestas. Nam tincidunt, turpis vitae pharetra varius, nunc justo sodales elit, id eleifend dui enim at turpis. Ut hendrerit, nibh nec accumsan facilisis, odio eros efficitur sem, non blandit libero elit sed eros.</p>
+
+                <p>Sebagai kesimpulan, tantangan ke depan menuntut institusi pendidikan untuk lebih tangkas dalam mengadopsi perubahan. Ekosistem pendidikan vokasi yang matang secara digital akan menjadi kunci utama dalam memenangkan persaingan di pasar kerja global yang semakin kompetitif.</p>
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <!-- Share Section -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Bagikan Berita</h3>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn"><span>FB</span> Facebook</a>
+                        <a href="#" class="share-btn"><span>LI</span> LinkedIn</a>
+                        <a href="#" class="share-btn"><span>TW</span> Twitter / X</a>
+                        <a href="#" class="share-btn"><span>WA</span> WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Latest News Widget -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Artikel Terbaru</h3>
+                    
+                    <a href="#" class="news-item">
+                        <div class="news-thumb"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" alt="News 1"></div>
+                        <div>
+                            <h4>Kemitraan Strategis dengan Sektor Teknologi Global</h4>
+                            <span class="read-more">Baca artikel &raquo;</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-item">
+                        <div class="news-thumb"><img src="https://images.unsplash.com/photo-1507537297325-5bcc9687498c?q=80&w=2070&auto=format&fit=crop" alt="News 2"></div>
+                        <div>
+                            <h4>Meningkatkan Relevansi Lulusan Lewat Magang Bersertifikat</h4>
+                            <span class="read-more">Baca artikel &raquo;</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-item">
+                        <div class="news-thumb"><img src="https://images.unsplash.com/photo-1454165833767-027ffea10c3b?q=80&w=2070&auto=format&fit=crop" alt="News 3"></div>
+                        <div>
+                            <h4>Penerapan Kurikulum Inovatif Berbasis Proyek Industri</h4>
+                            <span class="read-more">Baca artikel &raquo;</span>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo">VOKASI.GLOBAL</a>
+                <p style="margin-top:20px; color:var(--muted-gray); font-size: 0.9rem; max-width: 300px;">
+                    Membangun jembatan antara pendidikan dan masa depan karier melalui inovasi dan inspirasi global.
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">IN</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h5>Program</h5>
+                <ul>
+                    <li><a href="#">Diploma Tiga (D3)</a></li>
+                    <li><a href="#">Diploma Satu (D1)</a></li>
+                    <li><a href="#">Kursus Sertifikasi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Tentang Kami</h5>
+                <ul>
+                    <li><a href="#">Visi & Misi</a></li>
+                    <li><a href="#">Jaringan Mitra</a></li>
+                    <li><a href="#">Kesempatan Karier</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Media Inquiries</a></li>
+                    <li><a href="mailto:support@vokasi.global">support@vokasi.global</a></li>
+                </ul>
+                <p style="font-size:0.85rem; color:var(--muted-gray); margin-top: 15px;">
+                    Jl. Cakrawala No. 12<br>Pusat Inovasi, Jakarta
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="copyright">
+                &copy; 2026 Institusi Vokasi Global. Seluruh hak cipta dilindungi undang-undang.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
